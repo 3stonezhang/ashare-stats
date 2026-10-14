@@ -79,6 +79,6 @@ class MarketStatsViewModel(
     }
 
     companion object {
-        const val REFRESH_INTERVAL_MS = 60_000L
+        const val REFRESH_INTERVAL_MS = 10_000L
     }
 }

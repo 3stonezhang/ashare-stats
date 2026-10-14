@@ -358,5 +358,6 @@ private fun buildSubtitle(tradeDate: String, updatedAtMillis: Long, flatCount: I
         parts += SimpleDateFormat("HH:mm:ss", Locale.CHINA).format(Date(updatedAtMillis))
     }
     parts += "平盘$flatCount"
+    parts += "不含北交所/ST"
     return parts.joinToString(" · ")
 }

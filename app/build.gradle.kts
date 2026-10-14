@@ -60,6 +60,12 @@ android {
         compose = true
     }
 
+    // 避免 release 打包时因网络拉取 lint 依赖失败
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
